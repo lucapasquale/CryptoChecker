@@ -1,0 +1,26 @@
+{
+  "name": "cryptochecker",
+  "author": "Luca Pasquale (lucapasquale)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "tsc",
+    "start": "node -r dotenv/config dist/index.js"
+  },
+  "dependencies": {
+    "@types/later": "^1.2.4",
+    "@types/node": "^9.6.2",
+    "axios": "^0.18.0",
+    "decimal.js": "^10.0.0",
+    "dotenv": "^5.0.1",
+    "later": "^1.2.0",
+    "pg": "^7.4.1",
+    "sequelize": "^4.37.6",
+    "sequelize-typescript": "^0.6.3"
+  },
+  "devDependencies": {
+    "tslint": "^5.9.1",
+    "tslint-config-airbnb": "^5.8.0",
+    "typescript": "^2.8.1"
+  }
+}
