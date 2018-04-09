@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "lint": "tslint './src/**/*.ts'",
     "prestart": "tsc",
     "start": "node -r dotenv/config dist/index.js"
   },

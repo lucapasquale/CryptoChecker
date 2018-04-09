@@ -2,12 +2,13 @@ import axios from 'axios';
 import { Database } from '../db';
 
 
-
-export default async function(db: Database) {
+export default async function (db: Database) {
   const now = new Date();
 
-  getPoloniex(db, now);
-  getFoxbit(db, now);
+  await Promise.all([
+    getPoloniex(db, now),
+    getFoxbit(db, now),
+  ]);
 }
 
 
